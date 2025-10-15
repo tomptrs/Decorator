@@ -10,8 +10,10 @@ namespace Decorator
     {
         public Espresso()
         {
-            Description = "espresso ";
+            
         }
+
+        public override string Description { get => "Espresso"; }
 
         public override double cost()
         {

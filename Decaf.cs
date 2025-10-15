@@ -10,12 +10,15 @@ namespace Decorator
     {
         public Decaf()
         {
-            Description = "Decaf";
+           
         }
+
+     
+        public override string Description { get => "decaf"; }
 
         public override double cost()
         {
-           return 3.5;
+            return  4f;
         }
     }
 }

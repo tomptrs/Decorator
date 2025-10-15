@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 namespace Decorator
 {
     internal abstract class Beverage
-    {      
-        public string Description { get; set; }
+    {
+        public abstract string Description { get; }
+
 
         public abstract double cost();
        

@@ -10,8 +10,10 @@ namespace Decorator
     {
         public HouseBlend()
         {
-            Description = "Houseblend ";
+           
         }
+
+        public override string Description { get => "House blend"; }
 
         public override double cost()
         {

@@ -2,14 +2,9 @@
 
 using Decorator;
 
-Decaf dc = new Decaf();
-Console.WriteLine( dc.ToString());
+Beverage darkRoast = new DarkRoast() ;
+darkRoast = new Milk(darkRoast);
+darkRoast = new Milk(darkRoast);
 
-Espresso espresso = new Espresso();
-Console.WriteLine(espresso.ToString());
-
-EspressoWithMilk espressoWithMilk= new EspressoWithMilk();
-Console.WriteLine( espressoWithMilk.ToString());
-
-DecafWithSoya decafWithSoya = new DecafWithSoya();
-Console.WriteLine(decafWithSoya.ToString());
+Console.WriteLine(darkRoast.Description);
+    Console.WriteLine(darkRoast.cost()) ;

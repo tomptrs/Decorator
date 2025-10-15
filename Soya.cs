@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    internal class EspressoWithSoya:Beverage
+    internal class Soya : Decorator
     {
-        public EspressoWithSoya()
+        public Soya(Beverage beverage) : base(beverage)
         {
-            Description = "espresso with soya ";
         }
 
+        public override string Description { get => $"{beverage.Description} soya"; }
         public override double cost()
         {
-            return 3.25;
+            return 0.35f + beverage.cost();
         }
     }
 }
