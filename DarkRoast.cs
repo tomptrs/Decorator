@@ -15,7 +15,7 @@ namespace Decorator
 
         public override double cost()
         {
-            return base.cost() + 3f ;
+            return  3f ;
         }
     }
 }
